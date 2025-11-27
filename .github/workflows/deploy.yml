@@ -27,10 +27,6 @@ jobs:
         sudo apt update
         sudo apt install -y ansible
 
-    - name: Run Ansible (prep Docker)
-      working-directory: ./ansible
-      run: ansible-playbook deploy.yml
-
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v2
 
@@ -42,7 +38,12 @@ jobs:
       working-directory: ./terraform
       run: terraform apply -auto-approve
 
-    # 🔍 DEBUGGING STEPS (very important)
+    # 📌 Run Ansible AFTER Terraform, to configure container
+    - name: Run Ansible configuration (post-deploy)
+      working-directory: ./ansible
+      run: ansible-playbook deploy.yml
+
+    # 🔍 DEBUGGING STEPS
     - name: List Docker containers
       run: docker ps -a
 
@@ -52,12 +53,8 @@ jobs:
     - name: Exec inside container to list files
       run: docker exec mcp-server ls -R /app || true
 
-    # 📌 Existing Step
     - name: Print Docker container logs
       run: docker logs mcp-server || true
-    
 
     - name: Test MCP server inside container
       run: docker exec mcp-server curl -v http://localhost:8000/health || true
-
-  

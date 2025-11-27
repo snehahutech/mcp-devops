@@ -3,8 +3,52 @@
   become: yes
 
   tasks:
+
+    - name: Install Ansible Docker collection
+      ansible.builtin.command: ansible-galaxy collection install community.docker
+
     - name: Ensure Docker service is running
       service:
         name: docker
         state: started
         enabled: yes
+
+    - name: Install Python Docker SDK for Ansible
+      pip:
+        name: docker
+        state: present
+
+    - name: Create MCP config directory
+      file:
+        path: /opt/mcp
+        state: directory
+
+    - name: Write .env file for MCP server
+      copy:
+        dest: /opt/mcp/.env
+        content: |
+          ENVIRONMENT=production
+          LOG_LEVEL=info
+          PORT=8000
+
+    - name: Copy .env inside Docker container
+      command: docker cp /opt/mcp/.env mcp-server:/app/.env
+
+    - name: Restart MCP container
+      community.docker.docker_container:
+        name: mcp-server
+        state: started
+        restart: yes
+
+    - name: Wait for MCP server to start
+      uri:
+        url: http://localhost:8000/health
+        method: GET
+        return_content: yes
+      register: healthcheck
+      retries: 5
+      delay: 3
+      until: healthcheck.status == 200
+
+    - debug:
+        msg: "MCP Server is healthy: {{ healthcheck.content }}"
