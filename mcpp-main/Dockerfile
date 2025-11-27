@@ -1,19 +1,16 @@
-FROM python:3.11
+FROM python:3.11-slim
 
-# Install curl (for GitHub Actions health test)
-RUN apt update && apt install -y curl
-
-# Set working directory
+# Set working directory inside container
 WORKDIR /app
 
-# Copy ALL project files into container
-COPY . /app
+# Copy ONLY the actual server code
+COPY mcpp-main/mcp-server-actual/ /app/
 
-# ❗ Install dependencies from the correct file
-RUN pip install --no-cache-dir -r mcp-server-actual/requirements.txt
+# Install dependencies
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Expose FastAPI port
+# Expose port
 EXPOSE 8000
 
-# Run FastAPI wrapper
+# Run the FastAPI wrapper
 CMD ["uvicorn", "http_app:app", "--host", "0.0.0.0", "--port", "8000"]

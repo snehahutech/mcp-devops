@@ -55,7 +55,8 @@ jobs:
     # 📌 Existing Step
     - name: Print Docker container logs
       run: docker logs mcp-server || true
-      
+    
+
     - name: Test MCP server inside container
       run: docker exec mcp-server curl -v http://localhost:8000 || true
   
