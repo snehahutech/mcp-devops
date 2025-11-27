@@ -1,15 +1,17 @@
 FROM python:3.11-slim
 
-# Install curl
+# Install curl (for GitHub Actions testing)
 RUN apt update && apt install -y curl
 
+# Copy all project files into the image
 WORKDIR /app
 COPY . /app
 
-WORKDIR /app/mcp-server-actual
+# Install dependencies
+RUN pip install --no-cache-dir -r requirements.txt
 
-RUN if [ -f requirements.txt ]; then pip install --no-cache-dir -r requirements.txt; fi
-
+# Expose FastAPI port
 EXPOSE 8000
 
+# Correct entrypoint - http_app.py exists in /app
 CMD ["uvicorn", "http_app:app", "--host", "0.0.0.0", "--port", "8000"]
