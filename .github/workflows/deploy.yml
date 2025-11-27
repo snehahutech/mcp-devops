@@ -41,3 +41,6 @@ jobs:
     - name: Terraform Apply (build docker image & run container)
       working-directory: ./terraform
       run: terraform apply -auto-approve
+
+    - name: Print Docker container logs
+      run: docker logs mcp-server || true
