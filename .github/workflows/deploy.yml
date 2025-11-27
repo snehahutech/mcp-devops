@@ -58,5 +58,6 @@ jobs:
     
 
     - name: Test MCP server inside container
-      run: docker exec mcp-server curl -v http://localhost:8000 || true
+      run: docker exec mcp-server curl -v http://localhost:8000/health || true
+
   
