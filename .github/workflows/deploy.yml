@@ -42,5 +42,15 @@ jobs:
       working-directory: ./terraform
       run: terraform apply -auto-approve
 
+        - name: List Docker containers
+      run: docker ps -a
+
+    - name: Inspect container
+      run: docker inspect mcp-server || true
+
+    - name: Exec inside container
+      run: docker exec mcp-server ls -R /app || true
+
+
     - name: Print Docker container logs
       run: docker logs mcp-server || true
