@@ -3,13 +3,7 @@
   become: yes
 
   tasks:
-    - name: Install Docker
-      apt:
-        name: docker.io
-        update_cache: yes
-        state: present
-
-    - name: Start Docker
+    - name: Ensure Docker service is running
       service:
         name: docker
         state: started
