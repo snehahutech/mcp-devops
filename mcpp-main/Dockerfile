@@ -1,19 +1,19 @@
 FROM python:3.11
 
-# Install curl for health check
+# Install curl (for GitHub Actions health test)
 RUN apt update && apt install -y curl
 
 # Set working directory
 WORKDIR /app
 
-# Copy full project into /app
+# Copy ALL project files into container
 COPY . /app
 
-# Install requirements (correct path based on your screenshot)
-RUN pip install --no-cache-dir -r requirements.txt
+# ❗ Install dependencies from the correct file
+RUN pip install --no-cache-dir -r mcp-server-actual/requirements.txt
 
 # Expose FastAPI port
 EXPOSE 8000
 
-# Run the FastAPI wrapper
+# Run FastAPI wrapper
 CMD ["uvicorn", "http_app:app", "--host", "0.0.0.0", "--port", "8000"]
