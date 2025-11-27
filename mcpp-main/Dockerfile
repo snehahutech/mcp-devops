@@ -1,12 +1,14 @@
 FROM python:3.11-slim
 
+# Install curl
+RUN apt update && apt install -y curl
+
 WORKDIR /app
+COPY . /app
 
-# Copy only the MCP server code
-COPY mcp-server-actual/ /app
+WORKDIR /app/mcp-server-actual
 
-# Install dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+RUN if [ -f requirements.txt ]; then pip install --no-cache-dir -r requirements.txt; fi
 
 EXPOSE 8000
 
