@@ -1,0 +1,5693 @@
+{
+  "master_data_organization_setting_create": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.states.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "state_name": {
+              "type": "string"
+            },
+            "zone": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "state_name": "",
+        "zone": "",
+        "active": 0
+      }
+    }
+  },
+  "master_data_organization_setting_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.states.api.get_records?page=1&page_length=10"
+  },
+  "master_data_organization_setting_get_by_id": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.states.api.get_records_by_id?name=HR%2FMD%2FS%2F117"
+  },
+  "master_data_organization_setting_update": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.states.api.update_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "state_name": {
+              "type": "string"
+            },
+            "zone": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "doc_id": "",
+      "data": {
+        "state_name": "",
+        "zone": "",
+        "active": 0
+      }
+    }
+  },
+  "master_data_organization_setting_get_1": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.company_setup.api.get_records"
+  },
+  "master_data_organization_setting_update_1": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.company_setup.api.update_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "company_name": {
+              "type": "string"
+            },
+            "cin": {
+              "type": "string"
+            },
+            "pan": {
+              "type": "string"
+            },
+            "tan": {
+              "type": "string"
+            },
+            "cst": {
+              "type": "string"
+            },
+            "vat": {
+              "type": "string"
+            },
+            "service_tax": {
+              "type": "string"
+            },
+            "email": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "comapany_contact_no": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "address_line_1": {
+              "type": "string"
+            },
+            "address_line_2": {
+              "type": "string"
+            },
+            "city": {
+              "type": "string"
+            },
+            "state_name": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "pin_code": {
+              "type": "string"
+            },
+            "send_email_facility_required": {
+              "type": "boolean"
+            },
+            "smtp_server_name": {
+              "type": "string"
+            },
+            "smtp_port_name": {
+              "type": "string"
+            },
+            "smtp_username": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "smtp_password": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "upload_photo": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "active": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "doc_id": "",
+      "data": {
+        "company_name": "",
+        "cin": "",
+        "pan": "",
+        "tan": "",
+        "cst": "",
+        "vat": "",
+        "service_tax": "",
+        "email": null,
+        "comapany_contact_no": null,
+        "address_line_1": "",
+        "address_line_2": "",
+        "city": "",
+        "state_name": "",
+        "country": "",
+        "pin_code": "",
+        "send_email_facility_required": false,
+        "smtp_server_name": "",
+        "smtp_port_name": "",
+        "smtp_username": null,
+        "smtp_password": null,
+        "upload_photo": null,
+        "active": 0
+      }
+    }
+  },
+  "master_data_organization_setting_create_1": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.department.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "department_name": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "department_name": "",
+        "active": 0
+      }
+    }
+  },
+  "master_data_organization_setting_get_2": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.department.api.get_records?page=1&page_length=10"
+  },
+  "master_data_organization_setting_get_by_id_1": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.department.api.get_records_by_id?name=HR%2FMD%2FDPT%2F170"
+  },
+  "master_data_organization_setting_update_2": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.department.api.update_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "department_name": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "doc_id": "",
+      "data": {
+        "department_name": "",
+        "active": 0
+      }
+    }
+  },
+  "master_data_organization_setting_create_2": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.work_location.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "location_code": {
+              "type": "string"
+            },
+            "location_name": {
+              "type": "string"
+            },
+            "state_name": {
+              "type": "string"
+            },
+            "branch_name": {
+              "type": "string"
+            },
+            "location_flag": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            },
+            "salary_processing_start_date": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "location_code": "",
+        "location_name": "",
+        "state_name": "",
+        "branch_name": "",
+        "location_flag": "",
+        "active": 0,
+        "salary_processing_start_date": null
+      }
+    }
+  },
+  "master_data_organization_setting_get_3": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.work_location.api.get_records?page=1&page_length=10"
+  },
+  "master_data_organization_setting_get_by_id_2": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.work_location.api.get_records_by_id?name=HR%2FMD%2FWL%2F005"
+  },
+  "master_data_organization_setting_update_3": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.work_location.api.update_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "location_code": {
+              "type": "string"
+            },
+            "location_name": {
+              "type": "string"
+            },
+            "state_name": {
+              "type": "string"
+            },
+            "branch_name": {
+              "type": "string"
+            },
+            "location_flag": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            },
+            "salary_processing_start_date": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "doc_id": "",
+      "data": {
+        "location_code": "",
+        "location_name": "",
+        "state_name": "",
+        "branch_name": "",
+        "location_flag": "",
+        "active": 0,
+        "salary_processing_start_date": null
+      }
+    }
+  },
+  "master_data_organization_setting_create_3": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.grade.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "grade_name": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "grade_name": "",
+        "active": 0
+      }
+    }
+  },
+  "master_data_organization_setting_get_4": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.grade.api.get_records?page=1&page_length=10"
+  },
+  "master_data_organization_setting_get_by_id_3": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.grade.api.get_records_by_id?name=HR%2FMD%2FG%2F004"
+  },
+  "master_data_organization_setting_update_4": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.grade.api.update_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "grade_name": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "doc_id": "",
+      "data": {
+        "grade_name": "",
+        "active": 0
+      }
+    }
+  },
+  "master_data_organization_setting_create_4": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.section.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "section_name": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "section_name": "",
+        "active": 0
+      }
+    }
+  },
+  "master_data_organization_setting_get_5": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.section.api.get_records?page=1&page_length=10"
+  },
+  "master_data_organization_setting_get_by_id_4": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.section.api.get_records_by_id?name=HR%2FMD%2FSE%2F040"
+  },
+  "master_data_organization_setting_update_5": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.section.api.update_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "section_name": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "doc_id": "",
+      "data": {
+        "section_name": "",
+        "active": 0
+      }
+    }
+  },
+  "master_data_organization_setting_create_5": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.bank_master.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "ifsc_code": {
+              "type": "string"
+            },
+            "bank_name": {
+              "type": "string"
+            },
+            "account_no": {
+              "type": "string"
+            },
+            "address_line_1": {
+              "type": "string"
+            },
+            "address_line_2": {
+              "type": "string"
+            },
+            "city": {
+              "type": "string"
+            },
+            "pincode": {
+              "type": "string"
+            },
+            "contact_person": {
+              "type": "string"
+            },
+            "mobile": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "other_email": {
+              "type": "string"
+            },
+            "bsr_code": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "ifsc_code": "",
+        "bank_name": "",
+        "account_no": "",
+        "address_line_1": "",
+        "address_line_2": "",
+        "city": "",
+        "pincode": "",
+        "contact_person": "",
+        "mobile": "",
+        "email": "",
+        "other_email": "",
+        "bsr_code": "",
+        "active": 0
+      }
+    }
+  },
+  "master_data_organization_setting_get_6": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.bank_master.api.get_records?page=1&page_length=10"
+  },
+  "master_data_organization_setting_get_by_id_5": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.bank_master.api.get_records_by_id?name=HR%2FMD%2FBM%2F024"
+  },
+  "master_data_organization_setting_update_6": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.bank_master.api.update_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "ifsc_code": {
+              "type": "string"
+            },
+            "bank_name": {
+              "type": "string"
+            },
+            "account_no": {
+              "type": "string"
+            },
+            "address_line_1": {
+              "type": "string"
+            },
+            "address_line_2": {
+              "type": "string"
+            },
+            "city": {
+              "type": "string"
+            },
+            "pincode": {
+              "type": "string"
+            },
+            "contact_person": {
+              "type": "string"
+            },
+            "mobile": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "other_email": {
+              "type": "string"
+            },
+            "bsr_code": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "doc_id": "",
+      "data": {
+        "ifsc_code": "",
+        "bank_name": "",
+        "account_no": "",
+        "address_line_1": "",
+        "address_line_2": "",
+        "city": "",
+        "pincode": "",
+        "contact_person": "",
+        "mobile": "",
+        "email": "",
+        "other_email": "",
+        "bsr_code": "",
+        "active": 0
+      }
+    }
+  },
+  "master_data_organization_setting_create_6": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.branch_master.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "branch_name": {
+              "type": "string"
+            },
+            "address_line_1": {
+              "type": "string"
+            },
+            "address_line_2": {
+              "type": "string"
+            },
+            "city": {
+              "type": "string"
+            },
+            "state_name": {
+              "type": "string"
+            },
+            "pin_code": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "tan": {
+              "type": "string"
+            },
+            "pan": {
+              "type": "string"
+            },
+            "vat": {
+              "type": "string"
+            },
+            "cst": {
+              "type": "string"
+            },
+            "pf_no": {
+              "type": "string"
+            },
+            "service_tax": {
+              "type": "string"
+            },
+            "tds_no": {
+              "type": "string"
+            },
+            "esi_no": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "branch_name": "",
+        "address_line_1": "",
+        "address_line_2": "",
+        "city": "",
+        "state_name": "",
+        "pin_code": "",
+        "country": "",
+        "tan": "",
+        "pan": "",
+        "vat": "",
+        "cst": "",
+        "pf_no": "",
+        "service_tax": "",
+        "tds_no": "",
+        "esi_no": "",
+        "active": 0
+      }
+    }
+  },
+  "master_data_organization_setting_get_7": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.branch_master.api.get_records?page=1&page_length=10"
+  },
+  "master_data_organization_setting_get_by_id_6": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.branch_master.api.get_records_by_id?name=HR%2FMD%2FBRM%2F004"
+  },
+  "master_data_organization_setting_update_7": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.bank_master.api.update_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "branch_name": {
+              "type": "string"
+            },
+            "address_line_1": {
+              "type": "string"
+            },
+            "address_line_2": {
+              "type": "string"
+            },
+            "city": {
+              "type": "string"
+            },
+            "state_name": {
+              "type": "string"
+            },
+            "pin_code": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "tan": {
+              "type": "string"
+            },
+            "pan": {
+              "type": "string"
+            },
+            "vat": {
+              "type": "string"
+            },
+            "cst": {
+              "type": "string"
+            },
+            "pf_no": {
+              "type": "string"
+            },
+            "service_tax": {
+              "type": "string"
+            },
+            "tds_no": {
+              "type": "string"
+            },
+            "esi_no": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "doc_id": "",
+      "data": {
+        "branch_name": "",
+        "address_line_1": "",
+        "address_line_2": "",
+        "city": "",
+        "state_name": "",
+        "pin_code": "",
+        "country": "",
+        "tan": "",
+        "pan": "",
+        "vat": "",
+        "cst": "",
+        "pf_no": "",
+        "service_tax": "",
+        "tds_no": "",
+        "esi_no": "",
+        "active": 0
+      }
+    }
+  },
+  "master_data_organization_setting_create_7": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.nature_of_claim.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "claim_name": {
+              "type": "string"
+            },
+            "claim_limit": {
+              "type": "number"
+            },
+            "active": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "claim_name": "",
+        "claim_limit": 0,
+        "active": 0
+      }
+    }
+  },
+  "master_data_organization_setting_get_8": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.branch_master.api.get_records?page=1&page_length=10"
+  },
+  "master_data_organization_setting_get_by_id_7": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.nature_of_claim.api.get_records_by_id?name=HR%2FMD%2FNO%2F002"
+  },
+  "master_data_organization_setting_update_8": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.nature_of_claim.api.update_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "claim_name": {
+              "type": "string"
+            },
+            "claim_limit": {
+              "type": "number"
+            },
+            "active": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "doc_id": "",
+      "data": {
+        "claim_name": "",
+        "claim_limit": 0,
+        "active": 0
+      }
+    }
+  },
+  "master_data_employee_setting_create": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.qualification.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "qualification_name": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "qualification_name": "",
+        "active": 0
+      }
+    }
+  },
+  "master_data_employee_setting_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.qualification.api.get_records?page=1&page_length=10"
+  },
+  "master_data_employee_setting_get_by_id": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.qualification.api.get_records_by_id?name=HR%2FMD%2FQU%2F069"
+  },
+  "master_data_employee_setting_update": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.qualification.api.update_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "qualification_name": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "doc_id": "",
+      "data": {
+        "qualification_name": "",
+        "active": 0
+      }
+    }
+  },
+  "master_data_employee_setting_create_1": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.employment_type.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "employment_type": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "employment_type": "",
+        "active": 0
+      }
+    }
+  },
+  "master_data_employee_setting_get_1": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.employment_type.api.get_records?page=1&page_length=10"
+  },
+  "master_data_employee_setting_get_by_id_1": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.employment_type.api.get_records_by_id?name=HR%2FMD%2FET%2F002"
+  },
+  "master_data_employee_setting_update_1": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.employment_type.api.update_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "employment_type": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "doc_id": "",
+      "data": {
+        "employment_type": "",
+        "active": 0
+      }
+    }
+  },
+  "master_data_employee_setting_create_2": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.designation.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "designation_name": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "designation_name": "",
+        "active": 0
+      }
+    }
+  },
+  "master_data_employee_setting_get_2": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.designation.api.get_records?page=1&page_length=10"
+  },
+  "master_data_employee_setting_get_by_id_2": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.designation.api.get_records_by_id?name=ACCOUNTANT"
+  },
+  "master_data_employee_setting_update_2": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.designation.api.update_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "designation_name": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "name": "",
+      "data": {
+        "designation_name": "",
+        "active": 0
+      }
+    }
+  },
+  "master_data_employee_setting_create_3": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.salary_parameter_master.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "salary_parameter_name": {
+              "type": "string"
+            },
+            "addition_deduction": {
+              "type": "string"
+            },
+            "monthly_yearly": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string"
+            },
+            "Salary_Value": {
+              "type": "string"
+            },
+            "percentage_of": {
+              "type": "string"
+            },
+            "sequence_no": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            },
+            "visible": {
+              "type": "number"
+            },
+            "display_on_payslip": {
+              "type": "number"
+            },
+            "display_on_payregister": {
+              "type": "number"
+            },
+            "display_on_add_allowance": {
+              "type": "number"
+            },
+            "percentage_value": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "salary_parameter_name": "",
+        "addition_deduction": "",
+        "monthly_yearly": "",
+        "type": "",
+        "Salary_Value": "",
+        "percentage_of": "",
+        "sequence_no": "",
+        "active": 0,
+        "visible": 0,
+        "display_on_payslip": 0,
+        "display_on_payregister": 0,
+        "display_on_add_allowance": 0,
+        "percentage_value": ""
+      }
+    }
+  },
+  "master_data_employee_setting_get_3": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.salary_parameter_master.api.get_records?page=1&page_length=10"
+  },
+  "master_data_employee_setting_get_by_id_3": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.salary_parameter_master.api.get_records_by_id?name=Additional+Day+Worked"
+  },
+  "master_data_employee_setting_update_3": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.salary_parameter_master.api.update_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "salary_parameter_name": {
+              "type": "string"
+            },
+            "addition_deduction": {
+              "type": "string"
+            },
+            "monthly_yearly": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string"
+            },
+            "Salary_Value": {
+              "type": "string"
+            },
+            "percentage_of": {
+              "type": "string"
+            },
+            "sequence_no": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            },
+            "visible": {
+              "type": "number"
+            },
+            "display_on_payslip": {
+              "type": "number"
+            },
+            "display_on_payregister": {
+              "type": "number"
+            },
+            "display_on_add_allowance": {
+              "type": "number"
+            },
+            "percentage_value": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "doc_id": "",
+      "data": {
+        "salary_parameter_name": "",
+        "addition_deduction": "",
+        "monthly_yearly": "",
+        "type": "",
+        "Salary_Value": "",
+        "percentage_of": "",
+        "sequence_no": "",
+        "active": 0,
+        "visible": 0,
+        "display_on_payslip": 0,
+        "display_on_payregister": 0,
+        "display_on_add_allowance": 0,
+        "percentage_value": ""
+      }
+    }
+  },
+  "master_data_employee_setting_create_4": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.shift_master.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "shift_name": {
+              "type": "string"
+            },
+            "att_report_as": {
+              "type": "string"
+            },
+            "shift_duration": {
+              "type": "number"
+            },
+            "shift_start_time": {
+              "type": "string"
+            },
+            "warning_time": {
+              "type": "string"
+            },
+            "grace_time": {
+              "type": "string"
+            },
+            "lop_apply_1": {
+              "type": "string"
+            },
+            "after_warning_1": {
+              "type": "string"
+            },
+            "lop_apply_2": {
+              "type": "string"
+            },
+            "after_warning_2": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "shift_name": "",
+        "att_report_as": "",
+        "shift_duration": 0,
+        "shift_start_time": "",
+        "warning_time": "",
+        "grace_time": "",
+        "lop_apply_1": "",
+        "after_warning_1": "",
+        "lop_apply_2": "",
+        "after_warning_2": "",
+        "active": 0
+      }
+    }
+  },
+  "master_data_employee_setting_get_4": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.shift_master.api.get_records?page=1&page_length=10"
+  },
+  "master_data_employee_setting_get_by_id_4": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.shift_master.api.get_records_by_id?name=HR%2FMD%2FSM%2F020"
+  },
+  "master_data_employee_setting_update_4": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.shift_master.api.update_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "shift_name": {
+              "type": "string"
+            },
+            "att_report_as": {
+              "type": "string"
+            },
+            "shift_duration": {
+              "type": "number"
+            },
+            "shift_start_time": {
+              "type": "string"
+            },
+            "warning_time": {
+              "type": "string"
+            },
+            "grace_time": {
+              "type": "string"
+            },
+            "lop_apply_1": {
+              "type": "string"
+            },
+            "after_warning_1": {
+              "type": "string"
+            },
+            "lop_apply_2": {
+              "type": "string"
+            },
+            "after_warning_2": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "doc_id": "",
+      "data": {
+        "shift_name": "",
+        "att_report_as": "",
+        "shift_duration": 0,
+        "shift_start_time": "",
+        "warning_time": "",
+        "grace_time": "",
+        "lop_apply_1": "",
+        "after_warning_1": "",
+        "lop_apply_2": "",
+        "after_warning_2": "",
+        "active": 0
+      }
+    }
+  },
+  "master_data_employee_setting_create_5": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.leave_type_master.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "leave_code": {
+              "type": "string"
+            },
+            "leave_name": {
+              "type": "string"
+            },
+            "applicable_to": {
+              "type": "string"
+            },
+            "yearly_alloted_leaves": {
+              "type": "number"
+            },
+            "credit_on": {
+              "type": "string"
+            },
+            "can_be_applied_after": {
+              "type": "string"
+            },
+            "carry_forward": {
+              "type": "boolean"
+            },
+            "carry_forward_count": {
+              "type": "string"
+            },
+            "can_merge_with_holidays_weekoffs": {
+              "type": "number"
+            },
+            "is_prorate_basis": {
+              "type": "number"
+            },
+            "advanced_configurations": {
+              "type": "number"
+            },
+            "max_no_of_requests": {
+              "type": "string"
+            },
+            "max_no_of_requests_in_life": {
+              "type": "string"
+            },
+            "min_leaves_applicable_per_request": {
+              "type": "string"
+            },
+            "max_leaves_applicable_per_request": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            },
+            "visible": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "leave_code": "",
+        "leave_name": "",
+        "applicable_to": "",
+        "yearly_alloted_leaves": 0,
+        "credit_on": "",
+        "can_be_applied_after": "",
+        "carry_forward": false,
+        "carry_forward_count": "",
+        "can_merge_with_holidays_weekoffs": 0,
+        "is_prorate_basis": 0,
+        "advanced_configurations": 0,
+        "max_no_of_requests": "",
+        "max_no_of_requests_in_life": "",
+        "min_leaves_applicable_per_request": "",
+        "max_leaves_applicable_per_request": "",
+        "active": 0,
+        "visible": 0
+      }
+    }
+  },
+  "master_data_employee_setting_get_5": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.leave_type_master.api.get_records?page=1&page_length=10"
+  },
+  "master_data_employee_setting_get_by_id_5": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.leave_type_master.api.get_records_by_id?name=CL"
+  },
+  "master_data_employee_setting_update_5": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.leave_type_master.api.update_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "leave_code": {
+              "type": "string"
+            },
+            "leave_name": {
+              "type": "string"
+            },
+            "applicable_to": {
+              "type": "string"
+            },
+            "yearly_alloted_leaves": {
+              "type": "number"
+            },
+            "credit_on": {
+              "type": "string"
+            },
+            "can_be_applied_after": {
+              "type": "string"
+            },
+            "carry_forward": {
+              "type": "boolean"
+            },
+            "carry_forward_count": {
+              "type": "string"
+            },
+            "can_merge_with_holidays_weekoffs": {
+              "type": "number"
+            },
+            "is_prorate_basis": {
+              "type": "number"
+            },
+            "advanced_configurations": {
+              "type": "number"
+            },
+            "max_no_of_requests": {
+              "type": "string"
+            },
+            "max_no_of_requests_in_life": {
+              "type": "string"
+            },
+            "min_leaves_applicable_per_request": {
+              "type": "string"
+            },
+            "max_leaves_applicable_per_request": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            },
+            "visible": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "doc_id": "",
+      "data": {
+        "leave_code": "",
+        "leave_name": "",
+        "applicable_to": "",
+        "yearly_alloted_leaves": 0,
+        "credit_on": "",
+        "can_be_applied_after": "",
+        "carry_forward": false,
+        "carry_forward_count": "",
+        "can_merge_with_holidays_weekoffs": 0,
+        "is_prorate_basis": 0,
+        "advanced_configurations": 0,
+        "max_no_of_requests": "",
+        "max_no_of_requests_in_life": "",
+        "min_leaves_applicable_per_request": "",
+        "max_leaves_applicable_per_request": "",
+        "active": 0,
+        "visible": 0
+      }
+    }
+  },
+  "master_data_employee_setting_create_6": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.employee_category.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "category_name": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            },
+            "monday_weekoff": {
+              "type": "number"
+            },
+            "tuesday_weekoff": {
+              "type": "number"
+            },
+            "wednesday_weekoff": {
+              "type": "number"
+            },
+            "thursday_weekoff": {
+              "type": "number"
+            },
+            "friday_weekoff": {
+              "type": "number"
+            },
+            "saturday_weekoff": {
+              "type": "number"
+            },
+            "sunday_weekoff": {
+              "type": "number"
+            },
+            "2_days_weekly_off": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "category_name": "",
+        "active": 0,
+        "monday_weekoff": 0,
+        "tuesday_weekoff": 0,
+        "wednesday_weekoff": 0,
+        "thursday_weekoff": 0,
+        "friday_weekoff": 0,
+        "saturday_weekoff": 0,
+        "sunday_weekoff": 0,
+        "2_days_weekly_off": 0
+      }
+    }
+  },
+  "master_data_employee_setting_get_6": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.employee_category.api.get_records?page=1&page_length=10"
+  },
+  "master_data_employee_setting_get_by_id_6": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.employee_category.api.get_records_by_id?name=HR%2FMD%2FEC%2F112"
+  },
+  "master_data_employee_setting_update_6": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.employee_category.api.update_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "category_name": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            },
+            "monday_weekoff": {
+              "type": "number"
+            },
+            "tuesday_weekoff": {
+              "type": "number"
+            },
+            "wednesday_weekoff": {
+              "type": "number"
+            },
+            "thursday_weekoff": {
+              "type": "number"
+            },
+            "friday_weekoff": {
+              "type": "number"
+            },
+            "saturday_weekoff": {
+              "type": "number"
+            },
+            "sunday_weekoff": {
+              "type": "number"
+            },
+            "2_days_weekly_off": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "doc_id": "",
+      "data": {
+        "category_name": "",
+        "active": 0,
+        "monday_weekoff": 0,
+        "tuesday_weekoff": 0,
+        "wednesday_weekoff": 0,
+        "thursday_weekoff": 0,
+        "friday_weekoff": 0,
+        "saturday_weekoff": 0,
+        "sunday_weekoff": 0,
+        "2_days_weekly_off": 0
+      }
+    }
+  },
+  "master_data_employee_setting_create_7": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.over_time_category_details.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "over_time_category": {
+              "type": "string"
+            },
+            "times_off": {
+              "type": "string"
+            },
+            "rate": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "over_time_category": "",
+        "times_off": "",
+        "rate": "",
+        "active": 0
+      }
+    }
+  },
+  "master_data_employee_setting_get_7": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.over_time_category_details.api.get_records?page=1&page_length=10"
+  },
+  "master_data_employee_setting_get_by_id_7": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.over_time_category_details.api.get_records_by_id?name=HR%2FMD%2FOT%2F001"
+  },
+  "master_data_employee_setting_update_7": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.over_time_category_details.api.update_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "over_time_category": {
+              "type": "string"
+            },
+            "times_off": {
+              "type": "string"
+            },
+            "rate": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "name": "",
+      "data": {
+        "over_time_category": "",
+        "times_off": "",
+        "rate": "",
+        "active": 0
+      }
+    }
+  },
+  "master_data_employee_setting_create_8": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.workforce_category.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "category_name": {
+              "type": "string"
+            },
+            "basic_amount": {
+              "type": "number"
+            },
+            "active": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "category_name": "",
+        "basic_amount": 0,
+        "active": 0
+      }
+    }
+  },
+  "master_data_employee_setting_get_8": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.workforce_category.api.get_records?page=1&page_length=10"
+  },
+  "master_data_employee_setting_get_by_id_8": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.workforce_category.api.get_records_by_id?name=Highly+Skilled"
+  },
+  "master_data_employee_setting_update_8": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.master_data.doctype.workforce_category.api.update_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "category_name": {
+              "type": "string"
+            },
+            "basic_amount": {
+              "type": "number"
+            },
+            "active": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "doc_id": "",
+      "data": {
+        "category_name": "",
+        "basic_amount": 0,
+        "active": 0
+      }
+    }
+  },
+  "employee_management_personal_details_create": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.personal_details.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "aadhar_no": {
+              "type": "string"
+            },
+            "first_name": {
+              "type": "string"
+            },
+            "middle_name": {
+              "type": "string"
+            },
+            "last_name": {
+              "type": "string"
+            },
+            "fathershusbands_name": {
+              "type": "string"
+            },
+            "mothers_name": {
+              "type": "string"
+            },
+            "date_of_birth": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "mobile_no": {
+              "type": "string"
+            },
+            "pan_no": {
+              "type": "string"
+            },
+            "gender": {
+              "type": "string"
+            },
+            "blood_group": {
+              "type": "string"
+            },
+            "qualification": {
+              "type": "string"
+            },
+            "maritial_status": {
+              "type": "string"
+            },
+            "wedding_date": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "spouse_name": {
+              "type": "string"
+            },
+            "remarks": {
+              "type": "string"
+            },
+            "upload_photo": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "active": {
+              "type": "boolean"
+            },
+            "auto_attendance": {
+              "type": "boolean"
+            },
+            "it_calc": {
+              "type": "boolean"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "aadhar_no": "",
+        "first_name": "",
+        "middle_name": "",
+        "last_name": "",
+        "fathershusbands_name": "",
+        "mothers_name": "",
+        "date_of_birth": "",
+        "email": "",
+        "mobile_no": "",
+        "pan_no": "",
+        "gender": "",
+        "blood_group": "",
+        "qualification": "",
+        "maritial_status": "",
+        "wedding_date": null,
+        "spouse_name": "",
+        "remarks": "",
+        "upload_photo": null,
+        "active": false,
+        "auto_attendance": false,
+        "it_calc": false
+      }
+    }
+  },
+  "employee_management_personal_details_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.personal_details.api.get_records?page=1&page_length=10&filters=%7B%22active%22:1%7D"
+  },
+  "employee_management_personal_details_get_by_id": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.personal_details.api.get_records_by_id?name=S%2FAK%2F0004"
+  },
+  "employee_management_personal_details_update": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.personal_details.api.update_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "aadhar_no": {
+              "type": "string"
+            },
+            "first_name": {
+              "type": "string"
+            },
+            "middle_name": {
+              "type": "string"
+            },
+            "last_name": {
+              "type": "string"
+            },
+            "fathershusbands_name": {
+              "type": "string"
+            },
+            "mothers_name": {
+              "type": "string"
+            },
+            "date_of_birth": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "mobile_no": {
+              "type": "string"
+            },
+            "pan_no": {
+              "type": "string"
+            },
+            "gender": {
+              "type": "string"
+            },
+            "blood_group": {
+              "type": "string"
+            },
+            "qualification": {
+              "type": "string"
+            },
+            "maritial_status": {
+              "type": "string"
+            },
+            "wedding_date": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "spouse_name": {
+              "type": "string"
+            },
+            "remarks": {
+              "type": "string"
+            },
+            "upload_photo": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "active": {
+              "type": "boolean"
+            },
+            "auto_attendance": {
+              "type": "boolean"
+            },
+            "it_calc": {
+              "type": "boolean"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "doc_id": "",
+      "data": {
+        "aadhar_no": "",
+        "first_name": "",
+        "middle_name": "",
+        "last_name": "",
+        "fathershusbands_name": "",
+        "mothers_name": "",
+        "date_of_birth": "",
+        "email": "",
+        "mobile_no": "",
+        "pan_no": "",
+        "gender": "",
+        "blood_group": "",
+        "qualification": "",
+        "maritial_status": "",
+        "wedding_date": null,
+        "spouse_name": "",
+        "remarks": "",
+        "upload_photo": null,
+        "active": false,
+        "auto_attendance": false,
+        "it_calc": false
+      }
+    }
+  },
+  "employee_management_employee_violation_create": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.employee_violations.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "employee_name": {
+              "type": "string"
+            },
+            "date": {
+              "type": "string"
+            },
+            "violation_type": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "upload_pdf": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "employee_name": "",
+        "date": "",
+        "violation_type": "",
+        "description": "",
+        "upload_pdf": null
+      }
+    }
+  },
+  "employee_management_employee_violation_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.employee_violations.api.get_records"
+  },
+  "employee_management_employee_violation_get_by_id": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.employee_violations.api.get_records_by_id?name=employee_violations"
+  },
+  "employee_management_employee_violation_update": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.employee_violations.api.update_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "employee_name": {
+              "type": "string"
+            },
+            "date": {
+              "type": "string"
+            },
+            "violation_type": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "upload_pdf": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "doc_id": "",
+      "data": {
+        "employee_name": "",
+        "date": "",
+        "violation_type": "",
+        "description": "",
+        "upload_pdf": null
+      }
+    }
+  },
+  "employee_management_official_details_create": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.official_details.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "kronos_no": {
+              "type": "string"
+            },
+            "designation": {
+              "type": "string"
+            },
+            "department": {
+              "type": "string"
+            },
+            "section": {
+              "type": "string"
+            },
+            "branch": {
+              "type": "string"
+            },
+            "workforce_category": {
+              "type": "string"
+            },
+            "employee_grade": {
+              "type": "string"
+            },
+            "employment_type": {
+              "type": "string"
+            },
+            "employee_category": {
+              "type": "string"
+            },
+            "default_shift": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "applicable_shift": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "repo_manager": {
+              "type": "string"
+            },
+            "repo_manager_2": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "old_date_of_joining": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "date_of_joining": {
+              "type": "string"
+            },
+            "probation_date": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "confirmation_date": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "work_location": {
+              "type": "string"
+            },
+            "location_flag": {
+              "type": "string"
+            },
+            "previous_company": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "bank_account_details": {
+              "type": "number"
+            },
+            "bank_name": {
+              "type": "string"
+            },
+            "account_number": {
+              "type": "string"
+            },
+            "account_holder_name": {
+              "type": "string"
+            },
+            "bank_branch": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "bank_ifsc_code": {
+              "type": "string"
+            },
+            "pf_available": {
+              "type": "number"
+            },
+            "pf_number": {
+              "type": "string"
+            },
+            "uan_number": {
+              "type": "string"
+            },
+            "esi_available": {
+              "type": "number"
+            },
+            "esi_number": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "over_time_applicable": {
+              "type": "number"
+            },
+            "over_time_category": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "emp_code": {
+              "type": "string"
+            },
+            "designation_name": {
+              "type": "string"
+            },
+            "section_name": {
+              "type": "string"
+            },
+            "location_name": {
+              "type": "string"
+            },
+            "department_name": {
+              "type": "string"
+            },
+            "grade_name": {
+              "type": "string"
+            },
+            "categoryname": {
+              "type": "string"
+            },
+            "reporting_manager": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "kronos_no": "",
+        "designation": "",
+        "department": "",
+        "section": "",
+        "branch": "",
+        "workforce_category": "",
+        "employee_grade": "",
+        "employment_type": "",
+        "employee_category": "",
+        "default_shift": null,
+        "applicable_shift": null,
+        "repo_manager": "",
+        "repo_manager_2": null,
+        "old_date_of_joining": null,
+        "date_of_joining": "",
+        "probation_date": null,
+        "confirmation_date": null,
+        "work_location": "",
+        "location_flag": "",
+        "previous_company": null,
+        "bank_account_details": 0,
+        "bank_name": "",
+        "account_number": "",
+        "account_holder_name": "",
+        "bank_branch": null,
+        "bank_ifsc_code": "",
+        "pf_available": 0,
+        "pf_number": "",
+        "uan_number": "",
+        "esi_available": 0,
+        "esi_number": null,
+        "over_time_applicable": 0,
+        "over_time_category": null,
+        "emp_code": "",
+        "designation_name": "",
+        "section_name": "",
+        "location_name": "",
+        "department_name": "",
+        "grade_name": "",
+        "categoryname": "",
+        "reporting_manager": ""
+      }
+    }
+  },
+  "employee_management_official_details_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.official_details.api.get_records"
+  },
+  "employee_management_official_details_get_by_id": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.official_details.api.get_records_by_id?name=S%2FAK%2F0065"
+  },
+  "employee_management_official_details_update": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.official_details.api.update_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "kronos_no": {
+              "type": "string"
+            },
+            "designation": {
+              "type": "string"
+            },
+            "department": {
+              "type": "string"
+            },
+            "section": {
+              "type": "string"
+            },
+            "branch": {
+              "type": "string"
+            },
+            "workforce_category": {
+              "type": "string"
+            },
+            "employee_grade": {
+              "type": "string"
+            },
+            "employment_type": {
+              "type": "string"
+            },
+            "employee_category": {
+              "type": "string"
+            },
+            "default_shift": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "applicable_shift": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "repo_manager": {
+              "type": "string"
+            },
+            "repo_manager_2": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "old_date_of_joining": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "date_of_joining": {
+              "type": "string"
+            },
+            "probation_date": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "confirmation_date": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "work_location": {
+              "type": "string"
+            },
+            "location_flag": {
+              "type": "string"
+            },
+            "previous_company": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "bank_account_details": {
+              "type": "number"
+            },
+            "bank_name": {
+              "type": "string"
+            },
+            "account_number": {
+              "type": "string"
+            },
+            "account_holder_name": {
+              "type": "string"
+            },
+            "bank_branch": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "bank_ifsc_code": {
+              "type": "string"
+            },
+            "pf_available": {
+              "type": "number"
+            },
+            "pf_number": {
+              "type": "string"
+            },
+            "uan_number": {
+              "type": "string"
+            },
+            "esi_available": {
+              "type": "number"
+            },
+            "esi_number": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "over_time_applicable": {
+              "type": "number"
+            },
+            "over_time_category": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "emp_code": {
+              "type": "string"
+            },
+            "designation_name": {
+              "type": "string"
+            },
+            "section_name": {
+              "type": "string"
+            },
+            "location_name": {
+              "type": "string"
+            },
+            "department_name": {
+              "type": "string"
+            },
+            "grade_name": {
+              "type": "string"
+            },
+            "categoryname": {
+              "type": "string"
+            },
+            "reporting_manager": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "doc_id": "",
+      "data": {
+        "kronos_no": "",
+        "designation": "",
+        "department": "",
+        "section": "",
+        "branch": "",
+        "workforce_category": "",
+        "employee_grade": "",
+        "employment_type": "",
+        "employee_category": "",
+        "default_shift": null,
+        "applicable_shift": null,
+        "repo_manager": "",
+        "repo_manager_2": null,
+        "old_date_of_joining": null,
+        "date_of_joining": "",
+        "probation_date": null,
+        "confirmation_date": null,
+        "work_location": "",
+        "location_flag": "",
+        "previous_company": null,
+        "bank_account_details": 0,
+        "bank_name": "",
+        "account_number": "",
+        "account_holder_name": "",
+        "bank_branch": null,
+        "bank_ifsc_code": "",
+        "pf_available": 0,
+        "pf_number": "",
+        "uan_number": "",
+        "esi_available": 0,
+        "esi_number": null,
+        "over_time_applicable": 0,
+        "over_time_category": null,
+        "emp_code": "",
+        "designation_name": "",
+        "section_name": "",
+        "location_name": "",
+        "department_name": "",
+        "grade_name": "",
+        "categoryname": "",
+        "reporting_manager": ""
+      }
+    }
+  },
+  "employee_management_address_details_create": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.address_details.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "permanent_street": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "permanent_door_no": {
+              "type": "string"
+            },
+            "permanent_town_village": {
+              "type": "string"
+            },
+            "permanent_district": {
+              "type": "string"
+            },
+            "permanent__post_office_branch": {
+              "type": "string"
+            },
+            "permanent_mandal": {
+              "type": "string"
+            },
+            "permanent_mobile_no": {
+              "type": "string"
+            },
+            "permanent_state": {
+              "type": "string"
+            },
+            "permanent_country": {
+              "type": "string"
+            },
+            "permanent_pin_code": {
+              "type": "string"
+            },
+            "same_as_permanent_address": {
+              "type": "number"
+            },
+            "town_village": {
+              "type": "string"
+            },
+            "post_office_branch": {
+              "type": "string"
+            },
+            "mandal": {
+              "type": "string"
+            },
+            "door_no": {
+              "type": "string"
+            },
+            "street": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "mobile_no": {
+              "type": "string"
+            },
+            "district": {
+              "type": "string"
+            },
+            "state": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "pin_code": {
+              "type": "string"
+            },
+            "emp_code": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "permanent_street": null,
+        "permanent_door_no": "",
+        "permanent_town_village": "",
+        "permanent_district": "",
+        "permanent__post_office_branch": "",
+        "permanent_mandal": "",
+        "permanent_mobile_no": "",
+        "permanent_state": "",
+        "permanent_country": "",
+        "permanent_pin_code": "",
+        "same_as_permanent_address": 0,
+        "town_village": "",
+        "post_office_branch": "",
+        "mandal": "",
+        "door_no": "",
+        "street": null,
+        "mobile_no": "",
+        "district": "",
+        "state": "",
+        "country": "",
+        "pin_code": "",
+        "emp_code": ""
+      }
+    }
+  },
+  "employee_management_address_details_get_by_id": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.address_details.api.get_records_by_id?name=S%2FAK%2F0065"
+  },
+  "employee_management_address_details_get_by_id_1": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.personal_details.api.get_records_by_id?name=S%2FAK%2F0004"
+  },
+  "employee_management_address_details_update": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.address_details.api.update_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "permanent_street": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "permanent_door_no": {
+              "type": "string"
+            },
+            "permanent_town_village": {
+              "type": "string"
+            },
+            "permanent_district": {
+              "type": "string"
+            },
+            "permanent__post_office_branch": {
+              "type": "string"
+            },
+            "permanent_mandal": {
+              "type": "string"
+            },
+            "permanent_mobile_no": {
+              "type": "string"
+            },
+            "permanent_state": {
+              "type": "string"
+            },
+            "permanent_country": {
+              "type": "string"
+            },
+            "permanent_pin_code": {
+              "type": "string"
+            },
+            "same_as_permanent_address": {
+              "type": "number"
+            },
+            "town_village": {
+              "type": "string"
+            },
+            "post_office_branch": {
+              "type": "string"
+            },
+            "mandal": {
+              "type": "string"
+            },
+            "door_no": {
+              "type": "string"
+            },
+            "street": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "mobile_no": {
+              "type": "string"
+            },
+            "district": {
+              "type": "string"
+            },
+            "state": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "pin_code": {
+              "type": "string"
+            },
+            "emp_code": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "doc_id": "",
+      "data": {
+        "permanent_street": null,
+        "permanent_door_no": "",
+        "permanent_town_village": "",
+        "permanent_district": "",
+        "permanent__post_office_branch": "",
+        "permanent_mandal": "",
+        "permanent_mobile_no": "",
+        "permanent_state": "",
+        "permanent_country": "",
+        "permanent_pin_code": "",
+        "same_as_permanent_address": 0,
+        "town_village": "",
+        "post_office_branch": "",
+        "mandal": "",
+        "door_no": "",
+        "street": null,
+        "mobile_no": "",
+        "district": "",
+        "state": "",
+        "country": "",
+        "pin_code": "",
+        "emp_code": ""
+      }
+    }
+  },
+  "employee_management_document_details_create": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.document_details.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "file": {
+              "type": "string"
+            },
+            "filename": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "file": "",
+        "filename": ""
+      }
+    }
+  },
+  "employee_management_document_details_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.document_details.api.get_records"
+  },
+  "employee_management_document_details_get_by_id": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.document_details.api.get_records_by_id?doc_id=S%2FAK%2F0065"
+  },
+  "employee_management_document_details_create_1": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.document_details.api.upload_document",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "file": {
+              "type": "string"
+            },
+            "filename": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "file": "",
+        "filename": ""
+      }
+    }
+  },
+  "employee_management_other_details_create": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.other_details.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "passport_available": {
+              "type": "number"
+            },
+            "passport_no": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "valid_upto": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "driver_license_available": {
+              "type": "number"
+            },
+            "driving_license_no": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "validity_upto": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "emp_code": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "passport_available": 0,
+        "passport_no": null,
+        "valid_upto": null,
+        "driver_license_available": 0,
+        "driving_license_no": null,
+        "validity_upto": null,
+        "emp_code": ""
+      }
+    }
+  },
+  "employee_management_other_details_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.other_details.api.get_records"
+  },
+  "employee_management_other_details_get_by_id": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.other_details.api.get_records_by_id?name=S%2FAK%2F0065"
+  },
+  "employee_management_other_details_update": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.other_details.api.update_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "passport_available": {
+              "type": "number"
+            },
+            "passport_no": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "valid_upto": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "driver_license_available": {
+              "type": "number"
+            },
+            "driving_license_no": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "validity_upto": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "emp_code": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "doc_id": "",
+      "data": {
+        "passport_available": 0,
+        "passport_no": null,
+        "valid_upto": null,
+        "driver_license_available": 0,
+        "driving_license_no": null,
+        "validity_upto": null,
+        "emp_code": ""
+      }
+    }
+  },
+  "employee_management_ex_employee_s_create": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.resignation_details.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "employee_name": {
+              "type": "string"
+            },
+            "resignation_type": {
+              "type": "string"
+            },
+            "resignation_date": {
+              "type": "string"
+            },
+            "salary_holding_per": {
+              "type": "string"
+            },
+            "last_working_date": {
+              "type": "string"
+            },
+            "reason_for_resignation": {
+              "type": "string"
+            },
+            "remarks": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "upload_document": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "employee_name": "",
+        "resignation_type": "",
+        "resignation_date": "",
+        "salary_holding_per": "",
+        "last_working_date": "",
+        "reason_for_resignation": "",
+        "remarks": null,
+        "upload_document": null
+      }
+    }
+  },
+  "employee_management_ex_employee_s_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.resignation_details.api.get_records?page=1&page_length=10"
+  },
+  "employee_management_ex_employee_s_get_by_id": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.resignation_details.api.get_records_by_id?name=HR%2FEM%2FRD%2F129"
+  },
+  "employee_management_ex_employee_s_update": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.resignation_details.api.update_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "employee_name": {
+              "type": "string"
+            },
+            "resignation_type": {
+              "type": "string"
+            },
+            "resignation_date": {
+              "type": "string"
+            },
+            "salary_holding_per": {
+              "type": "string"
+            },
+            "last_working_date": {
+              "type": "string"
+            },
+            "reason_for_resignation": {
+              "type": "string"
+            },
+            "remarks": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "upload_document": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "name": "",
+      "data": {
+        "employee_name": "",
+        "resignation_type": "",
+        "resignation_date": "",
+        "salary_holding_per": "",
+        "last_working_date": "",
+        "reason_for_resignation": "",
+        "remarks": null,
+        "upload_document": null
+      }
+    }
+  },
+  "employee_management_family_details_create": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.family_details.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "family": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "emp_code": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "family": null,
+        "emp_code": ""
+      }
+    }
+  },
+  "employee_management_family_details_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.family_details.api.get_records"
+  },
+  "employee_management_family_details_get_by_id": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.family_details.api.get_records_by_id?name=S%2FAK%2F0065"
+  },
+  "employee_management_family_details_update": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.family_details.api.update_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "family": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "emp_code": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "doc_id": "",
+      "data": {
+        "family": null,
+        "emp_code": ""
+      }
+    }
+  },
+  "employee_management_final_settlement_create": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.final_settlement.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "emp_id": {
+              "type": "string"
+            },
+            "employee_name": {
+              "type": "string"
+            },
+            "doj": {
+              "type": "string"
+            },
+            "designation": {
+              "type": "string"
+            },
+            "section": {
+              "type": "string"
+            },
+            "resignation_type": {
+              "type": "string"
+            },
+            "last_working_day": {
+              "type": "string"
+            },
+            "no_of_years_worked": {
+              "type": "number"
+            },
+            "actual_basic": {
+              "type": "number"
+            },
+            "wages_payable": {
+              "type": "number"
+            },
+            "leave_encashment_days": {
+              "type": "number"
+            },
+            "leave_encashment_amount": {
+              "type": "number"
+            },
+            "gratuity_on_actual_basic": {
+              "type": "number"
+            },
+            "6_days_wages_recovery_advance_paid": {
+              "type": "number"
+            },
+            "pf_in_12": {
+              "type": "number"
+            },
+            "esi_in_075": {
+              "type": "number"
+            },
+            "bonus": {
+              "type": "number"
+            },
+            "net_payable": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "emp_id": "",
+        "employee_name": "",
+        "doj": "",
+        "designation": "",
+        "section": "",
+        "resignation_type": "",
+        "last_working_day": "",
+        "no_of_years_worked": 0,
+        "actual_basic": 0,
+        "wages_payable": 0,
+        "leave_encashment_days": 0,
+        "leave_encashment_amount": 0,
+        "gratuity_on_actual_basic": 0,
+        "6_days_wages_recovery_advance_paid": 0,
+        "pf_in_12": 0,
+        "esi_in_075": 0,
+        "bonus": 0,
+        "net_payable": 0
+      }
+    }
+  },
+  "employee_management_final_settlement_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.final_settlement.api.get_records"
+  },
+  "employee_management_final_settlement_get_by_id": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.final_settlement.api.get_records_by_id?name=HR%2FEM%2FES%2FFF%2F0008"
+  },
+  "employee_management_final_settlement_update": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.final_settlement.api.update_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "emp_id": {
+              "type": "string"
+            },
+            "employee_name": {
+              "type": "string"
+            },
+            "doj": {
+              "type": "string"
+            },
+            "designation": {
+              "type": "string"
+            },
+            "section": {
+              "type": "string"
+            },
+            "resignation_type": {
+              "type": "string"
+            },
+            "last_working_day": {
+              "type": "string"
+            },
+            "no_of_years_worked": {
+              "type": "number"
+            },
+            "actual_basic": {
+              "type": "number"
+            },
+            "wages_payable": {
+              "type": "number"
+            },
+            "leave_encashment_days": {
+              "type": "number"
+            },
+            "leave_encashment_amount": {
+              "type": "number"
+            },
+            "gratuity_on_actual_basic": {
+              "type": "number"
+            },
+            "6_days_wages_recovery_advance_paid": {
+              "type": "number"
+            },
+            "pf_in_12": {
+              "type": "number"
+            },
+            "esi_in_075": {
+              "type": "number"
+            },
+            "bonus": {
+              "type": "number"
+            },
+            "net_payable": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "doc_id": "",
+      "data": {
+        "emp_id": "",
+        "employee_name": "",
+        "doj": "",
+        "designation": "",
+        "section": "",
+        "resignation_type": "",
+        "last_working_day": "",
+        "no_of_years_worked": 0,
+        "actual_basic": 0,
+        "wages_payable": 0,
+        "leave_encashment_days": 0,
+        "leave_encashment_amount": 0,
+        "gratuity_on_actual_basic": 0,
+        "6_days_wages_recovery_advance_paid": 0,
+        "pf_in_12": 0,
+        "esi_in_075": 0,
+        "bonus": 0,
+        "net_payable": 0
+      }
+    }
+  },
+  "leave_management_attendance_create": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.leave_management.doctype.attendance.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "employee_code": {
+              "type": "string"
+            },
+            "date": {
+              "type": "string"
+            },
+            "first_punch": {
+              "type": "string"
+            },
+            "last_punch": {
+              "type": "string"
+            },
+            "total_time": {
+              "type": "string"
+            },
+            "shift": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "employee_code": "",
+        "date": "",
+        "first_punch": "",
+        "last_punch": "",
+        "total_time": "",
+        "shift": "",
+        "status": ""
+      }
+    }
+  },
+  "leave_management_attendance_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.leave_management.doctype.attendance.api.get_records?page=1&page_length=10&filters=%7B%22from_date%22:%222025-08-26%22,%22to_date%22:%222025-09-25%22%7D"
+  },
+  "leave_management_attendance_get_by_id": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.leave_management.doctype.attendance.api.get_records_by_id?name=HR/LM/A/00167827"
+  },
+  "leave_management_attendance_update": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.leave_management.doctype.attendance.api.update_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "first_punch": {
+              "type": "string"
+            },
+            "last_punch": {
+              "type": "string"
+            },
+            "duration": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "shift": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "doc_id": "",
+      "data": {
+        "first_punch": "",
+        "last_punch": "",
+        "duration": "",
+        "status": "",
+        "shift": ""
+      }
+    }
+  },
+  "leave_management_attendance_reconcilation_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.leave_management.doctype.attendance_reconcilation.api.erp_status_filters?date_string=2025-09-02"
+  },
+  "leave_management_attendance_reconcilation_approve": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.leave_management.doctype.attendance_reconcilation.api.approve_all",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "records": {
+              "type": "array",
+              "items": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "records": []
+      }
+    }
+  },
+  "leave_management_attendance_reconcilation_get_1": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.leave_management.doctype.attendance_reconcilation.api.fetch_date_wise_attendance?page=1&page_length=10&date_string=2025-08-06&status=Un+Changed"
+  },
+  "leave_management_compensatory_off_create": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.leave_management.doctype.compensatory_off.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "employee_name": {
+              "type": "string"
+            },
+            "against_date": {
+              "type": "string"
+            },
+            "application_date": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "employee_name": "",
+        "against_date": "",
+        "application_date": ""
+      }
+    }
+  },
+  "leave_management_compensatory_off_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.leave_management.doctype.compensatory_off.api.get_records?page=1&page_length=10&filters=[]"
+  },
+  "leave_management_compensatory_off_get_by_id": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.leave_management.doctype.compensatory_off.api.get_record_by_id?name=HR%2FLM%2FCOFF%2F000000005"
+  },
+  "leave_management_compensatory_off_update": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.leave_management.doctype.compensatory_off.api.update_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "employee_name": {
+              "type": "string"
+            },
+            "against_date": {
+              "type": "string"
+            },
+            "application_date": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "name": "",
+      "data": {
+        "employee_name": "",
+        "against_date": "",
+        "application_date": ""
+      }
+    }
+  },
+  "leave_management_weekoffs_create": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.leave_management.doctype.weekoffs.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "employee_name": {
+              "type": "string"
+            },
+            "week_off_date": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "employee_name": "",
+        "week_off_date": ""
+      }
+    }
+  },
+  "leave_management_weekoffs_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.leave_management.doctype.weekoffs.api.get_records?page=1&page_length=10&filters=%7B%22from_date%22:%222025-08-26%22,%22to_date%22:%222025-09-25%22%7D"
+  },
+  "leave_management_weekoffs_get_by_id": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.leave_management.doctype.weekoffs.api.get_record_by_id?name=02d69f7d7d"
+  },
+  "leave_management_weekoffs_update": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.leave_management.doctype.weekoffs.api.update_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "employee_name": {
+              "type": "string"
+            },
+            "week_off_date": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "name": "",
+      "data": {
+        "employee_name": "",
+        "week_off_date": ""
+      }
+    }
+  },
+  "leave_management_leave_request_create": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.leave_management.doctype.leave_request.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "leave_type": {
+              "type": "string"
+            },
+            "from_date": {
+              "type": "string"
+            },
+            "to_date": {
+              "type": "string"
+            },
+            "no_of_days": {
+              "type": "number"
+            },
+            "from_option": {
+              "type": "string"
+            },
+            "to_option": {
+              "type": "string"
+            },
+            "status": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "supporting_document": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "remarks": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "requested_date": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "employee_name": {
+              "type": "string"
+            },
+            "reason": {
+              "type": "string"
+            },
+            "approved_rejected_cancelled_by": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "approved_rejected_cancelled_date": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "requested_to": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "balance": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "leave_type": "",
+        "from_date": "",
+        "to_date": "",
+        "no_of_days": 0,
+        "from_option": "",
+        "to_option": "",
+        "status": null,
+        "supporting_document": null,
+        "remarks": null,
+        "requested_date": null,
+        "employee_name": "",
+        "reason": "",
+        "approved_rejected_cancelled_by": null,
+        "approved_rejected_cancelled_date": null,
+        "requested_to": null,
+        "balance": null
+      }
+    }
+  },
+  "leave_management_leave_request_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.leave_management.doctype.leave_request.api.get_records?page=1&page_length=10&filters=%7B%7D"
+  },
+  "leave_management_leave_encashment_request_create": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.leave_management.doctype.leave_encashment_request.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "employee_name": {
+              "type": "string"
+            },
+            "requested_date": {
+              "type": "string"
+            },
+            "balance": {
+              "type": "string"
+            },
+            "no_of_days": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "employee_name": "",
+        "requested_date": "",
+        "balance": "",
+        "no_of_days": ""
+      }
+    }
+  },
+  "leave_management_leave_encashment_request_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.leave_management.doctype.leave_encashment_request.api.get_records?page=1&page_length=10&filters=%7B%7D"
+  },
+  "leave_management_leave_setup_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.personal_details.api.get_records?filters=%7B%22active%22:1%7D"
+  },
+  "leave_management_leave_approvals_rejections_reject": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.leave_management.doctype.leave_request.api.get_records?page=1&page_length=10&filters=%7B%7D"
+  },
+  "leave_management_leave_encashment_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.leave_management.doctype.leave_encashment_request.api.get_records?page=1&page_length=10&filters=%7B%22emp_code%22:%22S%2FAK%2F0004%22%7D"
+  },
+  "payroll_configuration_income_tax_master_create": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.payroll_configurations.doctype.income_tax_slabs.api.create_records",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "year": {
+              "type": "string"
+            },
+            "slabs": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "from_value": {
+                    "type": "string"
+                  },
+                  "to_value": {
+                    "type": "string"
+                  },
+                  "tax_percentage": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": true
+              }
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "year": "",
+        "slabs": []
+      }
+    }
+  },
+  "payroll_configuration_income_tax_master_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.payroll_configurations.doctype.income_tax_slabs.api.get_records?filters=%7B%22year%22:%222025-2026%22%7D"
+  },
+  "payroll_configuration_income_tax_master_update": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.payroll_configurations.doctype.income_tax_slabs.api.update_records",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "year": {
+              "type": "string"
+            },
+            "slabs": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "from_value": {
+                    "type": "string"
+                  },
+                  "to_value": {
+                    "type": "string"
+                  },
+                  "tax_percentage": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": true
+              }
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "doc_id": "",
+      "data": {
+        "year": "",
+        "slabs": []
+      }
+    }
+  },
+  "payroll_configuration_income_tax_master_new_regime_crea": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.payroll_configurations.doctype.income_tax_slabs_new_regime.api.create_records",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "year": {
+              "type": "string"
+            },
+            "slabs": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "from_value": {
+                    "type": "string"
+                  },
+                  "to_value": {
+                    "type": "string"
+                  },
+                  "tax_percentage": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": true
+              }
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "year": "",
+        "slabs": []
+      }
+    }
+  },
+  "payroll_configuration_income_tax_master_new_regime_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.payroll_configurations.doctype.income_tax_slabs_new_regime.api.get_records?filters=%7B%22year%22:%222025-2026%22%7D"
+  },
+  "payroll_configuration_income_tax_master_new_regime_upda": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.payroll_configurations.doctype.income_tax_slabs_new_regime.api.update_records",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "year": {
+              "type": "string"
+            },
+            "slabs": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "from_value": {
+                    "type": "string"
+                  },
+                  "to_value": {
+                    "type": "string"
+                  },
+                  "tax_percentage": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": true
+              }
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "doc_id": "",
+      "data": {
+        "year": "",
+        "slabs": []
+      }
+    }
+  },
+  "payroll_configuration_investment_section_create": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.payroll_configurations.doctype.investment_section.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "section_name": {
+              "type": "string"
+            },
+            "exemption_type": {
+              "type": "string"
+            },
+            "exemption_value": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            },
+            "exemption_percentage": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "section_name": "",
+        "exemption_type": "",
+        "exemption_value": "",
+        "active": 0,
+        "exemption_percentage": ""
+      }
+    }
+  },
+  "payroll_configuration_investment_section_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.payroll_configurations.doctype.investment_section.api.get_records?page=1&page_length=10&filters=%7B%22active%22:1%7D"
+  },
+  "payroll_configuration_investment_section_get_by_id": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.payroll_configurations.doctype.investment_section.api.get_records_by_id?name=80EE"
+  },
+  "payroll_configuration_investment_section_update": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.payroll_configurations.doctype.investment_section.api.update_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "section_name": {
+              "type": "string"
+            },
+            "exemption_type": {
+              "type": "string"
+            },
+            "exemption_value": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            },
+            "exemption_percentage": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "doc_id": "",
+      "data": {
+        "section_name": "",
+        "exemption_type": "",
+        "exemption_value": "",
+        "active": 0,
+        "exemption_percentage": ""
+      }
+    }
+  },
+  "payroll_configuration_investment_section_items_create": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.payroll_configurations.doctype.investment_section_items.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "section_name": {
+              "type": "string"
+            },
+            "item_name": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "section_name": "",
+        "item_name": "",
+        "active": 0
+      }
+    }
+  },
+  "payroll_configuration_investment_section_items_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.payroll_configurations.doctype.investment_section_items.api.get_records?page=1&page_length=10&filters=%7B%22active%22:1%7D"
+  },
+  "payroll_configuration_investment_section_items_get_by_i": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.payroll_configurations.doctype.investment_section_items.api.get_records_by_id?name=Interest+On+House+Loan+First+Time"
+  },
+  "payroll_configuration_investment_section_items_update": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.payroll_configurations.doctype.investment_section_items.api.update_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "section_name": {
+              "type": "string"
+            },
+            "item_name": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "doc_id": "",
+      "data": {
+        "section_name": "",
+        "item_name": "",
+        "active": 0
+      }
+    }
+  },
+  "payroll_configuration_professional_tax_master_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.payroll_configurations.doctype.professional_tax_slabs.api.get_records?filters=%7B%22year%22:%222025-2026%22,%22state%22:%22HR%2FMD%2FS%2F117%22%7D"
+  },
+  "payroll_configuration_professional_tax_master_update": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.payroll_configurations.doctype.professional_tax_slabs.api.update_records",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "year": {
+              "type": "string"
+            },
+            "state": {
+              "type": "string"
+            },
+            "sr_citizen_age": {
+              "type": "number"
+            },
+            "slabs": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "from_value": {
+                    "type": "string"
+                  },
+                  "to_value": {
+                    "type": "string"
+                  },
+                  "tax_percentage": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": true
+              }
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "doc_id": "",
+      "data": {
+        "year": "",
+        "state": "",
+        "sr_citizen_age": 0,
+        "slabs": []
+      }
+    }
+  },
+  "payroll_configuration_esi_slabs_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.payroll_configurations.doctype.esi_slabs.api.get_records?filters=%7B%22financial_year%22:%222025-2026%22%7D"
+  },
+  "payroll_configuration_esi_slabs_update": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.payroll_configurations.doctype.esi_slabs.api.update_records",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "financial_year": {
+              "type": "string"
+            },
+            "slabs": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "from_month": {
+                    "type": "string"
+                  },
+                  "to_month": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": true
+              }
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "doc_id": "",
+      "data": {
+        "financial_year": "",
+        "slabs": []
+      }
+    }
+  },
+  "payroll_configuration_designation_wise_salary_parameter": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.payroll_configurations.doctype.designation_wise_salary_parameter.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "designation": {
+              "type": "string"
+            },
+            "grade": {
+              "type": "string"
+            },
+            "salary_parameters": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "designation": "",
+        "grade": "",
+        "salary_parameters": []
+      }
+    }
+  },
+  "payroll_configuration_designation_wise_salary_parameter_1": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.payroll_configurations.doctype.designation_wise_salary_parameter.api.get_records?page=1&page_length=10&filters=%7B%22active%22:1%7D"
+  },
+  "payroll_configuration_designation_wise_salary_parameter_2": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.payroll_configurations.doctype.designation_wise_salary_parameter.api.get_records_by_id?name=HR%2FPP%2FDWSP%2F026"
+  },
+  "payroll_configuration_designation_wise_salary_parameter_3": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.payroll_configurations.doctype.designation_wise_salary_parameter.api.update_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "designation": {
+              "type": "string"
+            },
+            "grade": {
+              "type": "string"
+            },
+            "salary_parameters": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "doc_id": "",
+      "data": {
+        "designation": "",
+        "grade": "",
+        "salary_parameters": []
+      }
+    }
+  },
+  "payroll_configuration_house_rent_declaration_create": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.payroll_configurations.doctype.house_rent_declaration.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "employee_name": {
+              "type": "string"
+            },
+            "house_rent_amount": {
+              "type": "string"
+            },
+            "house_owner_name": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "financial_year": {
+              "type": "string"
+            },
+            "owner_pan_no": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "employee_name": "",
+        "house_rent_amount": "",
+        "house_owner_name": null,
+        "financial_year": "",
+        "owner_pan_no": null
+      }
+    }
+  },
+  "payroll_configuration_house_rent_declaration_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.house_rent_declaration.api.get_records?page=1&page_length=10&filters=%7B%7D"
+  },
+  "payroll_configuration_house_rent_declaration_get_by_id": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.house_rent_declaration.api.get_records_by_id?doc_id=HR%2FEM%2FES%2FHRD%2F0001"
+  },
+  "payroll_configuration_house_rent_declaration_update": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.house_rent_declaration.api.update_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "employee_name": {
+              "type": "string"
+            },
+            "house_rent_amount": {
+              "type": "string"
+            },
+            "house_owner_name": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "financial_year": {
+              "type": "string"
+            },
+            "owner_pan_no": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "doc_id": "",
+      "data": {
+        "employee_name": "",
+        "house_rent_amount": "",
+        "house_owner_name": null,
+        "financial_year": "",
+        "owner_pan_no": null
+      }
+    }
+  },
+  "payroll_configuration_investment_declaration_create": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.payroll_configurations.doctype.investment_declaration.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "employee_name": {
+              "type": "string"
+            },
+            "select_year": {
+              "type": "string"
+            },
+            "section_name": {
+              "type": "string"
+            },
+            "section_item": {
+              "type": "string"
+            },
+            "amount": {
+              "type": "string"
+            },
+            "upload_document": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "employee_name": "",
+        "select_year": "",
+        "section_name": "",
+        "section_item": "",
+        "amount": "",
+        "upload_document": null
+      }
+    }
+  },
+  "payroll_configuration_investment_declaration_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.investment_declaration.api.get_records?page=1&page_length=10&filters=%7B%7D"
+  },
+  "payroll_configuration_investment_declaration_get_by_id": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.investment_declaration.api.get_records_by_id?name=HR%2FEM%2FID%2F001"
+  },
+  "payroll_configuration_investment_declaration_update": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.investment_declaration.api.update_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "employee_name": {
+              "type": "string"
+            },
+            "select_year": {
+              "type": "string"
+            },
+            "section_name": {
+              "type": "string"
+            },
+            "section_item": {
+              "type": "string"
+            },
+            "amount": {
+              "type": "string"
+            },
+            "upload_document": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "doc_id": "",
+      "data": {
+        "employee_name": "",
+        "select_year": "",
+        "section_name": "",
+        "section_item": "",
+        "amount": "",
+        "upload_document": null
+      }
+    }
+  },
+  "payroll_configuration_general_configuration_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.payroll_configurations.doctype.general_configuration.api.get_records"
+  },
+  "payroll_processing_employee_salary_pay_master_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.payroll_processing.doctype.salary_setup_for_employee.api.get_records?filters=%7B%22employee_name%22:%22S%2FAK%2F0021%22%7D"
+  },
+  "payroll_processing_additional_allowance_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.payroll_processing.doctype.additional_allowance.api.get_records?page=1&page_length=10&filters=%7B%22all_type%22:%22CVR+Maintainance%22,%22select_year%22:%222025%22,%22select_month%22:%22September%22%7D"
+  },
+  "payroll_processing_stock_allowance_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.payroll_processing.doctype.stock_allowances.api.get_records?page=1&page_length=10&filters=%7B%22year%22:%222025%22,%22month%22:%22September%22%7D"
+  },
+  "payroll_processing_salary_processing_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.payroll_processing.doctype.salary_processing.api.process_salary?filters=%7B%22year%22:%222025%22,%22month%22:%22September%22%7D"
+  },
+  "payroll_processing_processed_salary_rollback_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.payroll_processing.doctype.salary_processing.api.get_records?page=1&page_length=5&filters=%7B%22year%22:%222025%22,%22month%22:%22September%22,%22employee_name%22:%22S%2FAK%2F0006%22%7D"
+  },
+  "expense_expense_request_create": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.expense_&_reimbursement.doctype.reimbursement_request.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "employee": {
+              "type": "string"
+            },
+            "request_date": {
+              "type": "string"
+            },
+            "claim_name": {
+              "type": "string"
+            },
+            "claim_from_date": {
+              "type": "string"
+            },
+            "claim_to_date": {
+              "type": "string"
+            },
+            "bill_date": {
+              "type": "string"
+            },
+            "client_name": {
+              "type": "string"
+            },
+            "person_met": {
+              "type": "string"
+            },
+            "starting_place": {
+              "type": "string"
+            },
+            "destination_place": {
+              "type": "string"
+            },
+            "amount": {
+              "type": "string"
+            },
+            "upload_file": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            },
+            "extention": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "employee": "",
+        "request_date": "",
+        "claim_name": "",
+        "claim_from_date": "",
+        "claim_to_date": "",
+        "bill_date": "",
+        "client_name": "",
+        "person_met": "",
+        "starting_place": "",
+        "destination_place": "",
+        "amount": "",
+        "upload_file": "",
+        "active": 0,
+        "extention": ""
+      }
+    }
+  },
+  "expense_expense_request_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.expense_&_reimbursement.doctype.reimbursement_request.api.get_records?page=1&page_length=10&filters=%7B%7D"
+  },
+  "expense_expense_request_get_by_id": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.expense_&_reimbursement.doctype.reimbursement_request.api.get_records_by_id?name=HR%2FER%2FRR%2F003"
+  },
+  "expense_expense_request_update": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.expense_&_reimbursement.doctype.reimbursement_request.api.update_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "employee": {
+              "type": "string"
+            },
+            "request_date": {
+              "type": "string"
+            },
+            "claim_name": {
+              "type": "string"
+            },
+            "claim_from_date": {
+              "type": "string"
+            },
+            "claim_to_date": {
+              "type": "string"
+            },
+            "bill_date": {
+              "type": "string"
+            },
+            "client_name": {
+              "type": "string"
+            },
+            "person_met": {
+              "type": "string"
+            },
+            "starting_place": {
+              "type": "string"
+            },
+            "destination_place": {
+              "type": "string"
+            },
+            "amount": {
+              "type": "string"
+            },
+            "upload_file": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            },
+            "extention": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "doc_id": "",
+      "data": {
+        "employee": "",
+        "request_date": "",
+        "claim_name": "",
+        "claim_from_date": "",
+        "claim_to_date": "",
+        "bill_date": "",
+        "client_name": "",
+        "person_met": "",
+        "starting_place": "",
+        "destination_place": "",
+        "amount": "",
+        "upload_file": "",
+        "active": 0,
+        "extention": ""
+      }
+    }
+  },
+  "expense_expense_approvals_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.expense_&_reimbursement.doctype.reimbursement_request.api.get_records?page=1&page_length=10"
+  },
+  "asset_brand_master_create": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.assets_management.doctype.brand_master.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "brand_name": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "brand_name": "",
+        "active": 0
+      }
+    }
+  },
+  "asset_brand_master_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.assets_management.doctype.brand_master.api.get_records?page=1&page_length=10&filters=%7B%22active%22:1%7D"
+  },
+  "asset_brand_master_get_by_id": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.assets_management.doctype.brand_master.api.get_records_by_id?name=HR%2FAM%2FBRM%2F001"
+  },
+  "asset_brand_master_update": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.assets_management.doctype.brand_master.api.update_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "brand_name": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "doc_id": "",
+      "data": {
+        "brand_name": "",
+        "active": 0
+      }
+    }
+  },
+  "asset_asset_master_create": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.assets_management.doctype.assets_master.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "asset_name": {
+              "type": "string"
+            },
+            "brand": {
+              "type": "string"
+            },
+            "department": {
+              "type": "string"
+            },
+            "location": {
+              "type": "string"
+            },
+            "asset_purchase_date": {
+              "type": "string"
+            },
+            "warranty_expire_date": {
+              "type": "string"
+            },
+            "qty": {
+              "type": "string"
+            },
+            "unit_cost": {
+              "type": "string"
+            },
+            "total_cost": {
+              "type": "number"
+            },
+            "asset_description": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "asset_name": "",
+        "brand": "",
+        "department": "",
+        "location": "",
+        "asset_purchase_date": "",
+        "warranty_expire_date": "",
+        "qty": "",
+        "unit_cost": "",
+        "total_cost": 0,
+        "asset_description": "",
+        "active": 0
+      }
+    }
+  },
+  "asset_asset_master_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.assets_management.doctype.assets_master.api.get_records?page=1&page_length=10&filters=%7B%22active%22:1%7D"
+  },
+  "asset_asset_master_get_by_id": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.assets_management.doctype.assets_master.api.get_records_by_id?name=HR%2FAM%2FAM%2F001"
+  },
+  "asset_asset_master_update": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.assets_management.doctype.assets_master.api.update_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "asset_name": {
+              "type": "string"
+            },
+            "brand": {
+              "type": "string"
+            },
+            "department": {
+              "type": "string"
+            },
+            "location": {
+              "type": "string"
+            },
+            "asset_purchase_date": {
+              "type": "string"
+            },
+            "warranty_expire_date": {
+              "type": "string"
+            },
+            "qty": {
+              "type": "string"
+            },
+            "unit_cost": {
+              "type": "string"
+            },
+            "total_cost": {
+              "type": "number"
+            },
+            "asset_description": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "doc_id": "",
+      "data": {
+        "asset_name": "",
+        "brand": "",
+        "department": "",
+        "location": "",
+        "asset_purchase_date": "",
+        "warranty_expire_date": "",
+        "qty": "",
+        "unit_cost": "",
+        "total_cost": 0,
+        "asset_description": "",
+        "active": 0
+      }
+    }
+  },
+  "asset_asset_request_create": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.asset_request.doctype.assets_master.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "request_date": {
+              "type": "string"
+            },
+            "requested_by": {
+              "type": "string"
+            },
+            "asset_name": {
+              "type": "string"
+            },
+            "no_of_qty_required": {
+              "type": "string"
+            },
+            "date_needed": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "request_date": "",
+        "requested_by": "",
+        "asset_name": "",
+        "no_of_qty_required": "",
+        "date_needed": "",
+        "active": 0
+      }
+    }
+  },
+  "asset_asset_request_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.assets_management.doctype.asset_request.api.get_records?page=1&page_length=10"
+  },
+  "asset_asset_request_get_by_id": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.assets_management.doctype.asset_request.api.get_records_by_id?doc_id=HR%2FAM%2FAR%2F001"
+  },
+  "asset_asset_request_update": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.assets_management.doctype.asset_request.api.update_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "request_date": {
+              "type": "string"
+            },
+            "requested_by": {
+              "type": "string"
+            },
+            "asset_name": {
+              "type": "string"
+            },
+            "no_of_qty_required": {
+              "type": "string"
+            },
+            "date_needed": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "doc_id": "",
+      "data": {
+        "request_date": "",
+        "requested_by": "",
+        "asset_name": "",
+        "no_of_qty_required": "",
+        "date_needed": "",
+        "active": 0
+      }
+    }
+  },
+  "asset_asset_request_get_1": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.assets_management.doctype.asset_request.api.get_records?page=1&page_length=10&filters=%7B%7D"
+  },
+  "asset_asset_request_approval_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.assets_management.doctype.asset_request.api.get_records?page=1&page_length=10"
+  },
+  "travel_travel_request_create": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.travel_requisition.doctype.travel_request.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "travel_requested_for": {
+              "type": "string"
+            },
+            "travel_request_date": {
+              "type": "string"
+            },
+            "travel_type": {
+              "type": "string"
+            },
+            "journey_type": {
+              "type": "string"
+            },
+            "leaving_date": {
+              "type": "string"
+            },
+            "travel_mode": {
+              "type": "string"
+            },
+            "estimated_cost": {
+              "type": "string"
+            },
+            "accommodation_required": {
+              "type": "string"
+            },
+            "occupancy_type": {
+              "type": "string"
+            },
+            "purpose_of_travel": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            },
+            "approved_date_rejected_date_cancelled_date": {
+              "type": "string"
+            },
+            "return_date": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "travel_requested_for": "",
+        "travel_request_date": "",
+        "travel_type": "",
+        "journey_type": "",
+        "leaving_date": "",
+        "travel_mode": "",
+        "estimated_cost": "",
+        "accommodation_required": "",
+        "occupancy_type": "",
+        "purpose_of_travel": "",
+        "active": 0,
+        "approved_date_rejected_date_cancelled_date": "",
+        "return_date": null
+      }
+    }
+  },
+  "travel_travel_request_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.travel_requisition.doctype.travel_request.api.get_records?page=1&page_length=10"
+  },
+  "travel_travel_request_get_by_id": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.travel_requisition.doctype.travel_request.api.get_records_by_id?doc_id=HR%2FTR%2FNTR%2F001"
+  },
+  "travel_travel_request_update": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.travel_requisition.doctype.travel_request.api.update_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "travel_request_date": {
+              "type": "string"
+            },
+            "travel_type": {
+              "type": "string"
+            },
+            "journey_type": {
+              "type": "string"
+            },
+            "leaving_date": {
+              "type": "string"
+            },
+            "travel_mode": {
+              "type": "string"
+            },
+            "estimated_cost": {
+              "type": "number"
+            },
+            "accommodation_required": {
+              "type": "string"
+            },
+            "occupancy_type": {
+              "type": "string"
+            },
+            "purpose_of_travel": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            },
+            "approved_date_rejected_date_cancelled_date": {
+              "type": "string"
+            },
+            "return_date": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "doc_id": "",
+      "data": {
+        "travel_request_date": "",
+        "travel_type": "",
+        "journey_type": "",
+        "leaving_date": "",
+        "travel_mode": "",
+        "estimated_cost": 0,
+        "accommodation_required": "",
+        "occupancy_type": "",
+        "purpose_of_travel": "",
+        "active": 0,
+        "approved_date_rejected_date_cancelled_date": "",
+        "return_date": null
+      }
+    }
+  },
+  "travel_travel_approval_update": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.travel_requisition.doctype.travel_request.api.get_records?page=1&page_length=10",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "approved_date_rejected_date_cancelled_date": {
+              "type": "string"
+            },
+            "remarks": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "status": {
+              "type": "string"
+            },
+            "approved_by_rejected_by_cancelled_by": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "doc_id": "",
+      "data": {
+        "approved_date_rejected_date_cancelled_date": "",
+        "remarks": null,
+        "status": "",
+        "approved_by_rejected_by_cancelled_by": ""
+      }
+    }
+  },
+  "travel_travel_report_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.travel_requisition.doctype.travel_request.api.get_records?page=1&page_length=10&filters=%7B%7D"
+  },
+  "utilities_news_entry_create": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.utilities.doctype.news_entry.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "subject": {
+              "type": "string"
+            },
+            "news_content": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "date": "",
+        "subject": "",
+        "news_content": "",
+        "active": 0
+      }
+    }
+  },
+  "utilities_news_entry_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.utilities.doctype.news_entry.api.get_records?page=1&page_length=10"
+  },
+  "utilities_news_entry_get_by_id": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.utilities.doctype.news_entry.api.get_records_by_id?name=HR%2FU%2FNE%2F002"
+  },
+  "utilities_news_entry_update": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.utilities.doctype.news_entry.api.update_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "subject": {
+              "type": "string"
+            },
+            "news_content": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "doc_id": "",
+      "data": {
+        "date": "",
+        "subject": "",
+        "news_content": "",
+        "active": 0
+      }
+    }
+  },
+  "utilities_holiday_list_create": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.utilities.doctype.public_holiday_list.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "holiday_name": {
+              "type": "string"
+            },
+            "holiday_type": {
+              "type": "string"
+            },
+            "date": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "holiday_name": "",
+        "holiday_type": "",
+        "date": "",
+        "active": 0
+      }
+    }
+  },
+  "utilities_holiday_list_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.utilities.doctype.public_holiday_list.api.get_records?page=1&page_length=10"
+  },
+  "utilities_holiday_list_get_by_id": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.utilities.doctype.public_holiday_list.api.get_records_by_id?name=HR%2FU%2FPHL%2F087"
+  },
+  "utilities_holiday_list_update": {
+    "method": "PUT",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.utilities.doctype.public_holiday_list.api.update_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "doc_id": {
+          "type": "string"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "holiday_name": {
+              "type": "string"
+            },
+            "holiday_type": {
+              "type": "string"
+            },
+            "date": {
+              "type": "string"
+            },
+            "active": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "doc_id": "",
+      "data": {
+        "holiday_name": "",
+        "holiday_type": "",
+        "date": "",
+        "active": 0
+      }
+    }
+  },
+  "utilities_close_month_create": {
+    "method": "POST",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.utilities.doctype.close_month.api.create_record",
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "year": {
+              "type": "number"
+            },
+            "month": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "body_example": {
+      "data": {
+        "year": 0,
+        "month": ""
+      }
+    }
+  },
+  "utilities_close_month_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.utilities.doctype.close_month.api.get_latest_month"
+  },
+  "utilities_mobile_users_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.personal_details.api.get_records?page=1&page_length=10&filters=%7B%22active%22:1%7D"
+  },
+  "reports_pay_register_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.mis_reports.api.payslip_reports?page=1&page_length=10&filters=%7B%22year%22:2025,%22month%22:%22August%22%7D"
+  },
+  "reports_leave_balance_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.mis_reports.api.get_leave_reports?page=1&page_length=10&filters=%7B%22year%22:2025,%22month%22:8%7D"
+  },
+  "reports_pf_report_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.mis_reports.api.get_deductions_reports?filters=%7B%22year%22:%222025%22,%22month%22:%22August%22%7D&value=pf"
+  },
+  "reports_pt_report_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.mis_reports.api.get_deductions_reports?filters=%7B%22year%22:%222025%22,%22month%22:%22August%22%7D&value=pt"
+  },
+  "reports_esi_report_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.mis_reports.api.get_deductions_reports?filters=%7B%22year%22:%222025%22,%22month%22:%22August%22%7D&value=esi"
+  },
+  "reports_salary_history_report_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.mis_reports.api.salary_report?page=1&page_length=10&filters=%7B%22employee_name%22:%22S%2FAK%2F0004%22%7D"
+  },
+  "reports_attendance_report_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.mis_reports.api.attendance_report?filters=\\{\\}&page=1&page_length=10&from_date=2025-08-26&to_date=2025-09-25"
+  },
+  "reports_final_settlement_report_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.employee_management.doctype.final_settlement.api.get_records?filters=%7B%22emp_id%22:%22S%2FAK%2F1670%22%7D"
+  },
+  "reports_employee_history_report_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.mis_reports.api.employee_history_report?page=1&page_length=5&filters=%7B%22employee_name%22:%22S%2FAK%2F0007%22%7D"
+  },
+  "reports_showcase_notice_report_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.mis_reports.api.employee_showcase_notice_report?filters=%7B%7D"
+  },
+  "reports_bank_sheet_register_report_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.mis_reports.api.get_deductions_reports?filters=%7B%22year%22:%222024%22,%22month%22:%22June%22%7D"
+  },
+  "reports_half_yearly_return_report_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.leave_management.report.time_office.api.get_half_yearly_return?filters\\[year\\]=2025&filters\\[period\\]=1-6"
+  },
+  "reports_month_wise_net_salaries_get": {
+    "method": "GET",
+    "url": "https://apis.dev.smnl.in/api/method/htssuite.mis_reports.api.total_salaries_month_wise?year=2025"
+  }
+}

@@ -1,0 +1,43 @@
+name: Build & Deploy MCP Server
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Install Python for build
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.11"
+
+    - name: Build step (pip install)
+      run: |
+        cd mcpp-main/mcp-server-actual
+        pip install -r requirements.txt
+
+    - name: Install Ansible
+      run: |
+        sudo apt update
+        sudo apt install -y ansible
+
+    - name: Run Ansible (prep Docker)
+      working-directory: ./ansible
+      run: ansible-playbook deploy.yml
+
+    - name: Setup Terraform
+      uses: hashicorp/setup-terraform@v2
+
+    - name: Terraform Init
+      working-directory: ./terraform
+      run: terraform init
+
+    - name: Terraform Apply (build docker image & run container)
+      working-directory: ./terraform
+      run: terraform apply -auto-approve
