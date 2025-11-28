@@ -4,11 +4,6 @@
 
   tasks:
 
-    - name: Install Ansible Docker collection
-      ansible.builtin.ansible_galaxy:
-        command: install
-        name: community.docker
-
     - name: Ensure Docker service is running
       service:
         name: docker
