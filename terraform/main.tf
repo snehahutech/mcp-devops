@@ -23,6 +23,12 @@ resource "docker_image" "mcp" {
   }
 }
 
+resource "local_file" "mcp_env_file" {
+  filename = "/opt/mcp/.env"
+  content  = "ENVIRONMENT=production\nLOG_LEVEL=info\nPORT=8000\n"
+}
+
+
 
 resource "docker_container" "mcp" {
   name  = "mcp-server"
@@ -33,16 +39,16 @@ resource "docker_container" "mcp" {
     external = 8000
   }
 
-  # Correct volume mount block
-  volumes {
-    host_path      = "/opt/mcp/.env"
-    container_path = "/app/.env"
-    read_only      = false
+  # Correct bind mount block
+  mounts {
+    target = "/app/.env"
+    source = "/opt/mcp/.env"
+    type   = "bind"
   }
 
   restart = "always"
 
-  # Runtime health check (state management)
+  # Runtime health check
   healthcheck {
     test     = ["CMD", "curl", "-f", "http://localhost:8000/health"]
     interval = "30s"
@@ -50,4 +56,3 @@ resource "docker_container" "mcp" {
     retries  = 3
   }
 }
-
