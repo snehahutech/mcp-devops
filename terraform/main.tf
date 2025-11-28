@@ -33,10 +33,12 @@ resource "docker_container" "mcp" {
     external = 8000
   }
 
-  # Mount .env inside container for idempotency
-  volumes = [
-    "/opt/mcp/.env:/app/.env"
-  ]
+  # Correct volume mount block
+  volumes {
+    host_path      = "/opt/mcp/.env"
+    container_path = "/app/.env"
+    read_only      = false
+  }
 
   restart = "always"
 
@@ -48,3 +50,4 @@ resource "docker_container" "mcp" {
     retries  = 3
   }
 }
+
