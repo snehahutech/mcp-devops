@@ -5,7 +5,9 @@
   tasks:
 
     - name: Install Ansible Docker collection
-      ansible.builtin.command: ansible-galaxy collection install community.docker
+      ansible.builtin.ansible_galaxy:
+        command: install
+        name: community.docker
 
     - name: Ensure Docker service is running
       service:
@@ -30,15 +32,7 @@
           ENVIRONMENT=production
           LOG_LEVEL=info
           PORT=8000
-
-    - name: Copy .env inside Docker container
-      command: docker cp /opt/mcp/.env mcp-server:/app/.env
-
-    - name: Restart MCP container
-      community.docker.docker_container:
-        name: mcp-server
-        state: started
-        restart: yes
+      notify: Restart MCP Container
 
     - name: Wait for MCP server to start
       uri:
@@ -52,3 +46,9 @@
 
     - debug:
         msg: "MCP Server is healthy: {{ healthcheck.content }}"
+
+  handlers:
+    - name: Restart MCP Container
+      community.docker.docker_container:
+        name: mcp-server
+        restart: yes

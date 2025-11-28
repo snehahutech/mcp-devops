@@ -9,24 +9,42 @@ terraform {
 
 provider "docker" {}
 
-# Build Docker image from ../mcpp-main (where Dockerfile is)
 resource "docker_image" "mcp" {
   name = "mcp-server:latest"
 
   build {
     context = "../mcpp-main"
   }
+
+  lifecycle {
+    ignore_changes = [
+      build
+    ]
+  }
 }
 
-# Run container from that image
+
 resource "docker_container" "mcp" {
   name  = "mcp-server"
   image = docker_image.mcp.image_id
 
   ports {
-    internal = 8000  # inside container (Dockerfile EXPOSE)
-    external = 8000  # on your laptop (localhost:8000)
+    internal = 8000
+    external = 8000
   }
 
+  # Mount .env inside container for idempotency
+  volumes = [
+    "/opt/mcp/.env:/app/.env"
+  ]
+
   restart = "always"
+
+  # Runtime health check (state management)
+  healthcheck {
+    test     = ["CMD", "curl", "-f", "http://localhost:8000/health"]
+    interval = "30s"
+    timeout  = "5s"
+    retries  = 3
+  }
 }
